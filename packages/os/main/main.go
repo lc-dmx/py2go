@@ -19,10 +19,10 @@ func main() {
 	fmt.Println("----------flag package----------")
 	// flag 包
 	var (
-		name = flag.String("name", "", "名称")
-		age = flag.Uint64("age", 0, "年龄")
-		height = flag.Uint64("height", 0, "身高")
-		weight = flag.Uint64("weight", 0, "体重")
+		name    = flag.String("name", "", "名称")
+		age     = flag.Uint64("age", 0, "年龄")
+		height  = flag.Uint64("height", 0, "身高")
+		weight  = flag.Uint64("weight", 0, "体重")
 		married = flag.Bool("married", false, "是否已婚")
 	)
 	flag.Parse()
@@ -33,4 +33,3 @@ func main() {
 	fmt.Printf(format, "weight", *weight)
 	fmt.Printf(format, "married", *married)
 }
-
