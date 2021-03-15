@@ -1,7 +1,7 @@
 package calloption
 
 import (
-	"github.com/magiconair/properties/assert"
+	"github.com/stretchr/testify/assert"
 	"testing"
 )
 
@@ -10,7 +10,7 @@ func TestNewPeople(t *testing.T) {
 	p2 := People{
 		Id:   "123456",
 		Name: "lc",
-		Opt:  peopleOption{
+		Opt: peopleOption{
 			Sex:     "female",
 			Age:     19,
 			Height:  170,
